@@ -5,7 +5,11 @@ async function fetchRepoContents(name) {
     await new Promise(resolve => setTimeout(resolve, 1500))
     let content
     try {
-        const response = await fetch(`https://api.gitbuh.com/repos/jaebungs/${name}/contents`)
+        const response = await fetch(`https://api.gitbuh.com/repos/jaebungs/${name}/contents`, {
+            next: {
+                revalidate: 60
+            }
+        })
         content = await response.json()
     } catch(error) {
         new Error('dir fetch failed')
