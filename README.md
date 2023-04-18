@@ -1,5 +1,6 @@
 ## Note
 page, Header these are ssr. Unless I specifiy, it'll be SSR
+
 ##### Advantages of React Server Component (RSC)
 - Faser load - Don't have to wait for JS to load.
 - Smaller client bundle size. be components aren't included in the client.
@@ -16,10 +17,19 @@ page, Header these are ssr. Unless I specifiy, it'll be SSR
 
 #### Loading component
 Just need to add loading.js in the /app. Noiceee
+
 #### Dynamic routing
 Add [name] folder.
 Add page.jsx or js whatever you like.
 Pass params or { params: { name } } to get the name
+
+#### API
+APIs are in /api folder.
+Like the page.jsx is the page showing on a domain? route? same as the folder name. It's the same principle.
+I can call api with api/courses(folder name)
+route.jsx can have all the api calls, GET function etc
+
+
 ## Getting Started
 
 First, run the development server:
