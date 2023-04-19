@@ -1,10 +1,8 @@
-
-const loading = () => {
-  return (
-    <div className="loader">
-        <div className="spinner"></div>
-    </div>
-  )
-}
-
-export default loading
+const LoadingPage = () => {
+    return (
+      <div className='loader'>
+        <div className='spinner'></div>
+      </div>
+    );
+  };
+  export default LoadingPage;
